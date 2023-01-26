@@ -17,3 +17,14 @@ function nextJuly4(currentDate) {
    if ((jDate - currentDate) < 0) jDate.setFullYear(cYear + 1);
    return jDate;
 }
+
+function showClock() {
+    var thisDay = new Date("May, 19 2018 9:31:27 a.m.");
+    var localDate = thisDay.toLocaleDateString();
+    var localTime = thisDay.toLocaleTimeString();
+
+    document.getElementById("currentTime").innerHTML = localDate + "<br />" + localTime;
+
+    if (nextJuly4(thisDay));
+    return jDate;
+}
